@@ -242,11 +242,12 @@ def pitch_change_file(folder_path, file_path):
     if value == 'y':
         path_of_files = get_path_of_files(folder_path, file_path)
         files_to_process = os.listdir(path_of_files)
+        print(path_of_files)
         desired_f = 'without_vocals.mp3', 'accompaniment.mp3'
         if desired_f[0] in files_to_process:
             new_path = os.path.join(path_of_files, desired_f[0])
         elif desired_f[1] in files_to_process:
-            new_path = os.path.join(path_of_files, desired_f[0])
+            new_path = os.path.join(path_of_files, desired_f[1])
         pitch_change(new_path)
     else:
         print('We assume that was a no. There is nothing to do')
