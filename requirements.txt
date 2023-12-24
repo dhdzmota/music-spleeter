@@ -1,8 +1,0 @@
-spleeter==2.4.0
-chord-extractor==0.1.2
-pydub==0.25.1
-pytube==15.0.0
-librosa==0.10.1
-
-# external
-flake8==6.1.0
